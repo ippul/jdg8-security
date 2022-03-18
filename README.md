@@ -1,12 +1,15 @@
-- ####Download Jboss Data Grid 8.3 from https://access.redhat.com/jbossnetwork/restricted/softwareDownload.html?softwareId=104135
-- ####Unzip download zip file
-- ####Execute
+# jdg8-security
+
+## Run the example
+- Download Jboss Data Grid 8.3 from https://access.redhat.com/jbossnetwork/restricted/softwareDownload.html?softwareId=104135
+- Unzip download zip file
+- Execute
     ``` shell
      ${jboss.datagrid.home}/bin/cli.sh user create myuser -p changeme -g admin
      ${jboss.datagrid.home}/bin/cli.sh user create admin -p changeme
     ```
 
-- ####Edit ${jboss.datagrid.home}/server/conf/infinispan.xml
+- Edit ${jboss.datagrid.home}/server/conf/infinispan.xml
     ```xml
     <infinispan
             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -61,14 +64,14 @@
     </infinispan>
     ```
 
-- ####Start the server
+- Start the server
     ```shell
     ${jboss.datagrid.home}/bin/server.sh
     ```
 
-- ####Run the main class com.redhat.example.RemoteCacheExample
+- Run the main class com.redhat.example.RemoteCacheExample
 
-- ####Verify the output
+- Verify the output
   ```shell
   [Before put] Statistics currentNumberOfEntries: 0
   [After put] Statistics currentNumberOfEntries: 1
