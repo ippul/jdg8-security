@@ -2,7 +2,7 @@
 
 ## Run the example
 - Download Jboss Data Grid 8.3 from https://access.redhat.com/jbossnetwork/restricted/softwareDownload.html?softwareId=104135
-- Unzip download zip file
+- Unzip downloaded zip file
 - Execute
     ``` shell
      ${jboss.datagrid.home}/bin/cli.sh user create myuser -p changeme -g admin
